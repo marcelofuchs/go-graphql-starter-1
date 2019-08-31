@@ -2,11 +2,17 @@ app-name = "go-graphql-starter"
 version = 1.0
 
 [db]
-host = "postgres"
+host = "localhost"
 port = "5432"
-user = "postgres"
-password = "123456"
+user = "marcelo"
+password = "mfsimahe"
 dbname = "postgres"
+#docker
+#host = "postgres"
+#port = "5432"
+#user = "postgres"
+#password = "123456"
+#dbname = "postgres"
 
 [log]
 debug-mode = true

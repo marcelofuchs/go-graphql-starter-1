@@ -16,8 +16,8 @@ services:
   postgres:
     image: postgres
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: marcelo
+      POSTGRES_PASSWORD: mfsimahe
       POSTGRES_DB: postgres
     volumes:
       - ~/psqldata:/var/lib/postgresql/data
