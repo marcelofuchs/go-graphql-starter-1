@@ -50,6 +50,7 @@ This project would be continuously under development for enhancement. Pull reque
 
 1. Postgres database
 2. Golang
+3. Go-dep: https://github.com/golang/dep
 
 Remark: If you want to use other databases, please feel free to change the driver in `context/db.go`
 
@@ -82,7 +83,13 @@ Remark: If you want to use other databases, please feel free to change the drive
     ```
     There would be bindata.go generated under `schema` folder
 
-5. Start the server (Ensure your postgres database is live and its setting in Config.toml is correct)
+5. Install Dependencies
+
+    ```
+    go get -v ./
+    ```
+
+6. Start the server (Ensure your postgres database is live and its setting in Config.toml is correct)
     ```
     go build server.go
     ```

@@ -4,20 +4,20 @@ volumes:
   psqldata:
 
 services:
-  go-graphql-starter:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    depends_on:
-      - "postgres"
+  # go-graphql-starter:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - "postgres"
 
   postgres:
     image: postgres
     environment:
-      POSTGRES_USER: marcelo
-      POSTGRES_PASSWORD: mfsimahe
+      POSTGRES_USER: usuario
+      POSTGRES_PASSWORD: senha
       POSTGRES_DB: postgres
     volumes:
       - ~/psqldata:/var/lib/postgresql/data
